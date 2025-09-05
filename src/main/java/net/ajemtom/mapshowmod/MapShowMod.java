@@ -16,4 +16,4 @@ public class MapShowMod implements ModInitializer {
 	}
 }
 
-//aoj
+//a je to tak, je to proste tak ze chci udelat nejakou zmenu kamo ale uz lets go
