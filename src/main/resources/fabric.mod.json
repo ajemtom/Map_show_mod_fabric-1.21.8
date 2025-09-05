@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "map-show-mod",
+	"version": "${version}",
+	"name": "Map show mod",
+	"description": "Shows map when driving a boat",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/map-show-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.ajemtom.mapshowmod.MapShowMod"
+		],
+		"fabric-datagen": [
+			"net.ajemtom.mapshowmod.MapShowModDataGenerator"
+		],
+      "client": [
+            "net.ajemtom.mapshowmod.MapShowModClient"
+      ]
+	},
+	"mixins": [
+		"map-show-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
